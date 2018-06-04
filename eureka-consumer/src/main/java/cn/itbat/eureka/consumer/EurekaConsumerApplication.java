@@ -19,8 +19,8 @@ public class EurekaConsumerApplication {
     }
 
     public static void main(String[] args) {
-        LOGGER.info("EurekaClient 开始启动");
+        LOGGER.info("EurekaConsumer 开始启动");
         SpringApplication.run(EurekaConsumerApplication.class, args);
-        LOGGER.info("EurekaClient 启动完成");
+        LOGGER.info("EurekaConsumer 启动完成");
     }
 }
