@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>cn.itbat</groupId>
-	<artifactId>consul-client</artifactId>
+	<artifactId>eureka-consumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>consul-client</name>
-	<description>consul-client</description>
+	<name>eureka-consumer</name>
+	<description>eureka-consumer</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -28,7 +28,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
 		<dependency>
@@ -36,7 +36,6 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!--使用consul注册中心，必须添加该依赖-->
         <!--健康监控-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
