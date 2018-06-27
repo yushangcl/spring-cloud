@@ -8,5 +8,15 @@
     <artifactId>spring-cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
+    <modules>
+        <module>eureka-client</module>
+        <module>consul-client</module>
+        <module>eureka-consumer</module>
+        <module>eureka-consumer-feign</module>
+        <module>eureka-consumer-ribbon</module>
+        <module>eureka-server</module>
+        <module>config-bus</module>
+        <module>config-git</module>
+        <module>api-gateway-zuul</module>
+    </modules>
 </project>
