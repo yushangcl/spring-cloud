@@ -26,5 +26,7 @@ eureka:
       defaultZone: http://localhost:8001/eureka/   ## 注册中心eurka地址
 
 management:
-  security:
-     enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
