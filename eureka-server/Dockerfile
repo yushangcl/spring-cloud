@@ -9,4 +9,4 @@ RUN apk add --no-cache git \
 # spring-cloud/eureka-server
 FROM logr/8-jre-alpine
 COPY --from=build /src/spring-cloud/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar .
-RUN mv eureka-server-0.0.1-SNAPSHOT eureka-server.jar
+RUN mv eureka-server-0.0.1-SNAPSHOT.jar eureka-server.jar
