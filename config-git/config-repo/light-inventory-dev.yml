@@ -4,7 +4,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: light-demo
+    name: light-inventory
   datasource:
     name: test
     url: jdbc:mysql://192.168.173.150:3306/light_demo?useUnicode=true&characterEncoding=UTF8
@@ -34,7 +34,7 @@ spring:
     publisher-confirms: true
     virtual-host: light
 mybatis:
-    basepackage: com.runlion.inventory.demo.mapper
+    basepackage: com.runlion.light.inventory.mapper
     xmlLocation: classpath:mapper/**/*.xml
     mapper-locations: classpath:mapper/**/*.xml
     configuration:
