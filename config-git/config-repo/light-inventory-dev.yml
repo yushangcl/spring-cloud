@@ -7,9 +7,9 @@ spring:
     name: light-inventory
   datasource:
     name: test
-    url: jdbc:mysql://192.168.173.150:3306/light_demo?useUnicode=true&characterEncoding=UTF8
-    username: dbadmin
-    password: tms@db123
+    url: jdbc:mysql://192.168.173.145:3306/light?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: 4MELth5M9q0#Rng
     # 使用druid数据源
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -29,8 +29,8 @@ spring:
   rabbitmq:
     host: 192.168.173.150
     port: 5672
-    username: test
-    password: test
+    username: light
+    password: light
     publisher-confirms: true
     virtual-host: light
 mybatis:
@@ -45,8 +45,8 @@ logging:
 
 redis:
   database: 0
-  host: 192.168.173.150
-  password: 1234
+  host: 192.168.173.145
+  password: light
   pool:
       max-active: 1000
       max-idle: 100
